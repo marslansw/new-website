@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto; /*body'nin kenarlarının genişliğini hesaplamak için kullanılır*/
+
+}
+
+*, ::after, ::before { /*box-sizing: border-box; kutuların kenarlarının genişliğini hesaplamak için kullanılır*/
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;/*yazının yüksekliği*/
+    background-color: chocolate;
+    position: relative;/*yazının pozisyonunu belirler*/
+}
+
+header .header-description{
+    max-height: 40px;/*yazının yüksekliği*/
+    width: 40%; /* yazıya 40% genişlik verdim*/
+    float: left; /*sola yasladım*/
+}
+
+header .header-description small{
+    color: #fff;
+    padding-left: 40px; /*soldan boşluk verdim*/
+}
+
+header .authentication{
+    width: 60%;
+    float: right; /*sağa yasladım*/
+    max-height: 40px;
+
+}
+
+header .authentication ul{
+list-style: none;/*liste noktalarını kaldırdım*/
+padding: 0%; /*liste içindeki boşluğu kaldırdım*/
+
+}
+
+
